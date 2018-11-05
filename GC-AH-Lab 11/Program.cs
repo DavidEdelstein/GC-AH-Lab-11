@@ -6,8 +6,20 @@ using System.Threading.Tasks;
 
 namespace GC_AH_Lab_11
 {
+    // James - It's pretty common convention to put your classes in a seperate file.  so this could exist in something like Movie.cs. 
+    // this helps make your code more organized.
     class Movie
     {
+        // James - for private fields, it's common convention to keep the name lower case and or to have an underscore in front of 
+        // it. ie  private string _title;
+        // also, as syntatctic sugar you could completely change how you handle getting the information and completely remove 
+        // your private fields, by using properties.  
+        // for example...
+        //
+        // public string Title { get; }
+        //
+        // this is a property that only Gets the data, ie, it's readonly and public outside of the class. this would 
+        // also remove your GetTitle() method.
         private string Title;
         private string Category;
 
@@ -33,6 +45,7 @@ namespace GC_AH_Lab_11
     {
         static void Main(string[] args)
         {
+            // James - I like this solution a bunch.
             List<Movie> vhs = MovieDatabase.MovieList();
 
             while (true)
@@ -78,7 +91,7 @@ namespace GC_AH_Lab_11
 
 
 
-
+        // James - when you push your code, please remove commented code.
 
 
         //private static List<Movie> MovieList()
