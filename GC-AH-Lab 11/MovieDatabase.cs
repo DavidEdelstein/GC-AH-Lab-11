@@ -10,6 +10,7 @@ namespace GC_AH_Lab_11
     {
         public static List<Movie> MovieList()
         {
+            // James - clever solution here, I like that this is in a seperate file and class, cool stuff.
             List<Movie> vhs = new List<Movie>();
             vhs.Add(new Movie("Star Wars", "Scifi"));
             vhs.Add(new Movie("The Terminator", "Scifi"));
